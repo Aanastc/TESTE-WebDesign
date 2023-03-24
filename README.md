@@ -1,13 +1,13 @@
-<h3 align="center"> TESTE DE HABILIDADES TÉCNICAS </h3>
+# TESTE DE HABILIDADES TÉCNICAS
 
 Link do Figma: https://www.figma.com/file/xIaLybyDEY3OSlGC9f83bZ/Untitled?node-id=0-1&t=VkcjcCq6VTCFHG31-0
 
-# INSTRUÇÕES
-## Tecnologias:
+## INSTRUÇÕES
+### Tecnologias:
 HTML5, CSS3 e Javascript(ES6) com frameworks e bibliotecas suportadas pelo Moodle,
 como Bootstrap 4 e JQuery
 
-# Requisitos:
+## Requisitos:
   - Design responsivo
   - Organização e padronização das classes do CSS (como, por exemplo, SMACSS e BEM)
   - Tags semânticas
