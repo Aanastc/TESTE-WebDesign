@@ -12,7 +12,7 @@ a {
 p {
   font-size: 0.9em;
   font-weight: 400;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
 h1 {
@@ -28,7 +28,7 @@ span {
 }
 
 .secao {
-  background-color: #F5F5F7;
+  background-color: #f5f5f7;
   box-shadow: 0px 10px 15px 0px #00000026;
   border-radius: 10px;
   border-top-width: 0.5rem;
@@ -40,39 +40,23 @@ span {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.bg-icon {
-  background-color: #FFFFFF;
-  border-radius: 3.125rem;
-  display: block;
-  width: 88px;
-  height: 83px;
-  position: relative;
-}
-
-.bg-icon-img {
-
-  position: absolute;
-  left: -12px;
-  top: 4px;
-}
-
 .explorando_texto {
   font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
 .explorando_texto h1 {
-  color: #0C7C77;
+  color: #0c7c77;
 }
 
 .explorando_secao {
-  border-top-color: #0C7C77;
+  border-top-color: #0c7c77;
 }
 
 .explorando_instrutores-Button {
-  background-color: #0C7C77;
+  background-color: #0c7c77;
   width: 15.813rem;
   height: 2.5rem;
   border-radius: 13px;
@@ -80,7 +64,7 @@ span {
 }
 
 .explorando_instrutores-span {
-  color: #FFFFFF;
+  color: #ffffff;
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
@@ -89,7 +73,7 @@ span {
 }
 
 .explorando_buttons {
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   border-radius: 3.125rem;
   width: 3.438rem;
   height: 3.438rem;
@@ -98,7 +82,7 @@ span {
 
 .instrutores_collapse {
   border: none;
-  background-image: url("./assets/imgs/bgColapse.png");
+  background-image: url('./assets/imgs/bgColapse.png');
   background-size: cover;
 }
 
@@ -117,59 +101,147 @@ span {
 }
 
 .instrutores_collapse-cardText {
-  background-color: #F6F1ED;
+  background-color: #f6f1ed;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .secao_arvorismo {
-  border-top-color: #3391D1;
+  border-top-color: #3391d1;
 }
 
 .butto_arvorismo,
 .secao_arvorismo h1 {
-  color: #3391D1;
+  color: #3391d1;
 }
 
 .secao_pescaria {
-  border-top-color: #F7941E;
+  border-top-color: #f7941e;
 }
 
 .button_pescaria,
 .secao_pescaria h1 {
-  color: #F7941E;
+  color: #f7941e;
 }
 
 .secao_ciclismo {
-  border-top-color: #00A79D;
+  border-top-color: #00a79d;
 }
 
 .button_ciclismo,
 .secao_ciclismo h1 {
-  color: #00A79D;
+  color: #00a79d;
 }
 
 .secao_acampamento {
-  border-top-color: #ED6B6B;
+  border-top-color: #ed6b6b;
 }
 
 .button_acampamento,
 .secao_acampamento h1 {
-  color: #ED6B6B;
+  color: #ed6b6b;
 }
 
-
 .secao_ProcessoAvaliativo {
-  border-top-color: #0C7C77;
+  border-top-color: #0c7c77;
 }
 
 .button_ProcessoAvaliativo,
 .secao_ProcessoAvaliativo h1 {
-  color: #0C7C77;
+  color: #0c7c77;
+}
+
+
+.bg-icon-imgG {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 22px;
+  top: 4px;
+}
+
+.bg-iconP,
+.bg-iconG {
+  background-color: #ffffff;
+  border-radius: 3.125rem;
+  display: block;
+  width: 83px;
+  height: 83px;
+  position: relative;
+}
+
+.bg-icon-imgP {
+  width: 93px;
+  height: 82px;
+  position: absolute;
+  right: 12px;
+  top: 4px;
 }
 
 @media (max-width: 310px) {
   .explorando_instrutores-Button {
     width: 12.313rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .bg-iconG {
+    display: none;
+  }
+
+  .bg-iconP {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-iconG {
+    width: 40px;
+    height: 40px;
+  }
+
+  .bg-icon-imgG {
+    width: 44px;
+    height: 38px;
+    right: 6px;
+    top: 2px;
+  }
+
+  .bg-iconP {
+    width: 40px;
+    height: 40px;
+  }
+
+  .bg-icon-imgP {
+    width: 44px;
+    height: 38px;
+    right: 6px;
+    top: 2px;
+  }
+}
+
+@media (max-width: 992px) {
+  .bg-iconG {
+    width: 60px;
+    height: 60px;
+  }
+
+  .bg-icon-imgG {
+    width: 66px;
+    height: 58px;
+    right: 9px;
+    top: 3px;
+  }
+
+  .bg-iconP {
+    width: 60px;
+    height: 60px;
+  }
+
+  .bg-icon-imgP {
+    width: 66px;
+    height: 58px;
+    right: 9px;
+    top: 3px;
   }
 }
