@@ -1,46 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
+    <title>Explorando</title>
 
-  <title>Explorando</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fontes -->
+    <!-- Trocar a quantidade de importações  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fontes -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-
-  <!-- Folha de estilo  -->
-  <link rel="stylesheet" href="./css/index.css">
-
-</head>
-<body>
-
-  <main class="container my-5">
-
-    <section class="px-3 py-4 p-md-4 my-5 mx-0 explorando_secao secao">
-      <div class="row d-flex justify-content-between">
-        <div class="col-5 col-sm-7 d-flex flex-column justify-content-between">
-          <div class="mb-4 explorando_texto">
-            <p>Olá, Explorador(a).</p>
-            <p class="mb-1">Receba nossas boas vindas! Este é o seu ambiente do curso de</p>
-            <h1>
-              explorando parque do cocó
-            </h1>
-          </div>
-          <div class="col-sm-5 col-lg-4 col-xl-3 mt-4">
-            <a data-toggle="collapse" href="#instrutores" role="button" aria-expanded="false"
-              aria-controls="collapseExample" class="mb-4 mb-sm-0">
-              <div class="row d-flex align-items-center justify-content-between explorando_instrutores-Button">
+    <!-- Folha de estilo  -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <main class="container my-5">
+      <section class="px-3 py-4 p-md-4 my-5 mx-0 explorando_secao secao">
+        <div class="row d-flex justify-content-between gap-4">
+          <div
+            class="col-5 col-sm-7 d-flex flex-column justify-content-between"
+          >
+            <div class="explorando_texto">
+              <span>Olá, Explorador(a).</span>
+              <p class="mb-1">
+                Receba nossas boas vindas! Este é o seu ambiente do curso de
+              </p>
+              <h1>explorando parque do cocó</h1>
+            </div>
+            <div class="col-sm-5 col-lg-4 col-xl-3">
+              <a
+                data-toggle="collapse"
+                href="#instrutores"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+                class="mb-4 mb-sm-0 row d-flex align-items-center justify-content-between explorando_instrutores-Button"
+              >
                 <div class="col-1 col-sm-2">
-                  <img src="./assets/icons/instrutores.svg" alt="">
+                  <img src="./assets/icons/instrutores.svg" alt="" />
                 </div>
                 <div class="col-6 pl-0 pl-sm-3 col-sm-8">
                   <span class="explorando_instrutores-span ml-1">
@@ -48,260 +60,336 @@
                   </span>
                 </div>
                 <div class="col-2 ml-sm-auto">
-                  <img src="./assets/icons/setaBaixo.svg" alt="">
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-3 col-sm-5">
-          <div class="row d-flex flex-column justify-content-start align-items-end mr-1 md-mr-0">
-            <div class="mb-2">
-              <a href="#">
-                <div class="d-flex justify-content-center align-items-center explorando_buttons">
-                  <img src="./assets/icons/bussula.svg" alt="">
-                </div>
-              </a>
-            </div>
-            <div class="my-2">
-              <a href="#">
-                <div class="d-flex justify-content-center align-items-center explorando_buttons">
-                  <img src="./assets/icons/mapa.svg" alt="">
-                </div>
-              </a>
-            </div>
-            <div class="my-2">
-              <a href="#">
-                <div class="d-flex justify-content-center align-items-center explorando_buttons">
-                  <img src="./assets/icons/placaDeDirecao.svg" alt="">
+                  <img src="./assets/icons/setaBaixo.svg" alt="" />
                 </div>
               </a>
             </div>
           </div>
+          <div class="col-3 col-sm-5">
+            <div
+              class="d-flex flex-column justify-content-start align-items-end mr-1"
+            >
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center explorando_buttons mb-2"
+              >
+                <img src="./assets/icons/bussula.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center explorando_buttons mb-2"
+              >
+                <img src="./assets/icons/mapa.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                class="d-flex justify-content-center align-items-center explorando_buttons mb-2"
+              >
+                <img src="./assets/icons/placaDeDirecao.svg" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="instrutores" class="mb-4 collapse instrutores_collapse secao">
-      <div class="row pt-2 px-4 d-flex justify-content-center align-items-center">
-        <div class="col-md-5 d-none d-md-block">
-          <img src="./assets/icons/Ellipse.svg" alt="" class="img-fluid instrutores_imagemEllipse">
-          <img src="./assets/imgs/img-Colapse.png" alt="" class="img-fluid instrutores_collapse-imagem">
-        </div>
-        <div class="col-md-7 d-flex p-4">
-          <div class="instrutores_collapse-cardText p-4">
-            <p>
+      <section
+        id="instrutores"
+        class="mb-4 collapse instrutores_collapse secao"
+      >
+        <div
+          class="row pt-2 px-4 d-flex justify-content-center align-items-center"
+        >
+          <div class="col-md-5 d-none d-md-block">
+            <img
+              src="./assets/icons/Ellipse.svg"
+              alt=""
+              class="img-fluid instrutores_imagemEllipse"
+            />
+            <img
+              src="./assets/imgs/img-Colapse.png"
+              alt=""
+              class="img-fluid instrutores_collapse-imagem"
+            />
+          </div>
+          <div class="col-md-7 d-flex p-4">
+            <div class="instrutores_collapse-cardText p-4">
               <strong>Olá, Nome do Usuário.</strong>
-            </p>
-            <p>Somos Xiliane e Jovélio, seremos seus instrutores durante esta aventura.
-              Acompanharemos você durante os trajetos e atividades, guiando seu processo de aprendizado até o fim. </p>
-            <p class="mb-0">Á seguir, <strong>acesse os cards</strong> que detalham as atividades primordiais para sua
-              jornada.</p>
+              <p>
+                Somos Xiliane e Jovélio, seremos seus instrutores durante esta
+                aventura. Acompanharemos você durante os trajetos e atividades,
+                guiando seu processo de aprendizado até o fim.
+              </p>
+              <p class="mb-0">
+                Á seguir, <strong>acesse os cards</strong> que detalham as
+                atividades primordiais para sua jornada.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="row mb-4">
-      <div class="col-md-6">
-        <section class="mb-4 p-4 secao_arvorismo secao">
-          <div class="d-flex mb-2 justify-content-between align-items-center">
-            <h2>ARVORISMO</h2>
-            <div class="bg-iconP">
-              <img src="./assets/icons/arvorismo.svg" alt="" class="bg-icon-imgP">
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <section class="mb-4 p-4 secao_arvorismo secao">
+            <div class="d-flex mb-2 justify-content-between align-items-center">
+              <h2>ARVORISMO</h2>
+              <div class="bg-iconP">
+                <img
+                  src="./assets/icons/arvorismo.svg"
+                  alt=""
+                  class="bg-icon-imgP"
+                />
+              </div>
             </div>
-          </div>
-          <div>
-            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
-              utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
-              embaralhou para fazer
-            </p>
-            <p>um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para
-              aeditoração eletrônica, permanecendo essencialmente
-            </p>
-            <p>Acesse o módulo no botão a seguir.</p>
-            <a href="./percursos/arvorismo.html" target="_blank"
-              class="btn btn-light btn-block px-2 row secao_button button_arvorismo">
-              <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <p>
+                Lorem Ipsum é simplesmente uma simulação de texto da indústria
+                tipográfica e de impressos, e vem sendo utilizado desde o século
+                XVI, quando um impressor desconhecido pegou uma bandeja de tipos
+                e os embaralhou para fazer
+              </p>
+              <p>
+                um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a
+                cinco séculos, como também ao salto para aeditoração eletrônica,
+                permanecendo essencialmente
+              </p>
+              <p>Acesse o módulo no botão a seguir.</p>
+              <a
+                href="./percursos/arvorismo.html"
+                target="_blank"
+                class="btn btn-light btn-block px-2 row secao_button button_arvorism d-flex justify-content-between align-items-center"
+              >
                 <div class="d-flex align-items-center">
                   <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
                 </div>
-                <img src="./assets/icons/setaAzul.svg" alt="" height="20px">
+                <img src="./assets/icons/setaAzul.svg" alt="" height="20px" />
+              </a>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-6">
+          <section class="mb-4 p-4 secao_pescaria secao">
+            <div class="d-flex mb-2 justify-content-between align-items-center">
+              <h2>PESCARIA</h2>
+              <div class="bg-iconP">
+                <img
+                  src="./assets/icons/pescaria.svg"
+                  alt=""
+                  class="bg-icon-imgP"
+                />
               </div>
-            </a>
-          </div>
-        </section>
+            </div>
+            <div>
+              <p>
+                Lorem Ipsum é simplesmente uma simulação de texto da indústria
+                tipográfica e de impressos, e vem sendo utilizado desde o século
+                XVI, quando um impressor desconhecido pegou uma bandeja de tipos
+                e os embaralhou para fazer
+              </p>
+              <p>
+                um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a
+                cinco séculos, como também ao salto para aeditoração eletrônica,
+                permanecendo essencialmente
+              </p>
+              <p>Acesse o módulo no botão a seguir.</p>
+              <a
+                href="./percursos/pescaria.html"
+                target="_blank"
+                class="btn btn-light btn-block px-2 row secao_button button_pescaria d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
+                </div>
+                <img
+                  src="./assets/icons/setaLaranja.svg"
+                  alt=""
+                  height="20px"
+                />
+              </a>
+            </div>
+          </section>
+        </div>
       </div>
-      <div class="col-md-6">
-        <section class="mb-4 p-4 secao_pescaria secao">
-          <div class="d-flex mb-2 justify-content-between align-items-center">
-            <h2>PESCARIA</h2>
-            <div class="bg-iconP">
-              <img src="./assets/icons/pescaria.svg" alt="" class="bg-icon-imgP">
+
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <section class="mb-4 p-4 secao_ciclismo secao">
+            <div class="d-flex mb-2 justify-content-between align-items-center">
+              <h2>CICLISMO</h2>
+              <div class="bg-iconP">
+                <img
+                  src="./assets/icons/ciclismo.svg"
+                  alt=""
+                  class="bg-icon-imgP"
+                />
+              </div>
             </div>
-          </div>
-          <div>
-            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
-              utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
-              embaralhou para fazer
-            </p>
-            <p>um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para
-              aeditoração eletrônica, permanecendo essencialmente
-            </p>
-            <p>Acesse o módulo no botão a seguir.</p>
-            <a href="./percursos/pescaria.html" target="_blank"
-              class="btn btn-light btn-block px-2 row secao_button button_pescaria">
-              <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <p>
+                Lorem Ipsum é simplesmente uma simulação de texto da indústria
+                tipográfica e de impressos, e vem sendo utilizado desde o século
+                XVI, quando um impressor desconhecido pegou uma bandeja de tipos
+                e os embaralhou para fazer
+              </p>
+              <p>
+                um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a
+                cinco séculos, como também ao salto para aeditoração eletrônica,
+                permanecendo essencialmente
+              </p>
+              <p>Acesse o módulo no botão a seguir.</p>
+              <a
+                href="#"
+                target="_blank"
+                class="btn btn-light btn-block px-2 row secao_button button_ciclismo d-flex justify-content-between align-items-center"
+              >
                 <div class="d-flex align-items-center">
                   <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
                 </div>
-                <img src="./assets/icons/setaLaranja.svg" alt="" height="20px">
+                <img src="./assets/icons/setaVerde.svg" alt="" height="20px" />
+              </a>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-6">
+          <section class="mb-4 p-4 secao_acampamento secao">
+            <div class="d-flex mb-2 justify-content-between align-items-center">
+              <h2>ACAMPAMENTO</h2>
+              <div class="bg-iconG p-2">
+                <img
+                  src="./assets/icons/acampamento.svg"
+                  alt=""
+                  class="bg-icon-imgG"
+                />
               </div>
+            </div>
+            <div>
+              <p>
+                Lorem Ipsum é simplesmente uma simulação de texto da indústria
+                tipográfica e de impressos, e vem sendo utilizado desde o século
+                XVI, quando um impressor desconhecido pegou uma bandeja de tipos
+                e os embaralhou para fazer
+              </p>
+              <p>
+                um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a
+                cinco séculos, como também ao salto para aeditoração eletrônica,
+                permanecendo essencialmente
+              </p>
+              <p>Acesse o módulo no botão a seguir.</p>
+              <a
+                href="#"
+                target="_blank"
+                class="btn btn-light btn-block px-2 row secao_button button_acampamento d-flex justify-content-between align-items-center"
+              >
+                <div class="d-flex align-items-center">
+                  <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
+                </div>
+                <img src="./assets/icons/setaRosa.svg" alt="" height="20px" />
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section class="px-4 py-2 secao_ProcessoAvaliativo secao">
+        <div class="m-0 pt-4 d-flex justify-content-between align-items-center">
+          <h2 class="mb-0">PROCESSO AVALIATIVO</h2>
+          <div class="bg-iconG p-2">
+            <img
+              src="./assets/icons/conquista.svg"
+              alt=""
+              class="bg-icon-imgG"
+            />
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-7 mt-sm-3">
+            <p>
+              Lorem Ipsum é simplesmente uma simulação de texto da indústria
+              tipográfica e de impressos, e vem sendo utilizado desde o século
+              XVI, quando um impressor desconhecido pegou uma bandeja de tipos e
+              os embaralhou para fazer
+            </p>
+            <p>
+              um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a
+              cinco séculos, como também ao salto para a editoração eletrônica,
+              permanecendo essencialmente
+            </p>
+            <p class="mb-0">Acesse as conquistas nos botões a seguir.</p>
+          </div>
+          <div class="col-lg-5">
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-light btn-block my-3 px-2 row secao_button button_ProcessoAvaliativo d-flex justify-content-between align-items-center"
+            >
+              <div class="d-flex align-items-center">
+                <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
+              </div>
+              <img src="./assets/icons/setaVerdeE.svg" alt="" height="20px" />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-light btn-block my-3 px-2 row secao_button button_ProcessoAvaliativo d-flex justify-content-between align-items-center"
+            >
+              <div class="d-flex align-items-center">
+                <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
+              </div>
+              <img src="./assets/icons/setaVerdeE.svg" alt="" height="20px" />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-light btn-block my-3 px-2 row secao_button button_ProcessoAvaliativo d-flex justify-content-between align-items-center"
+            >
+              <div class="d-flex align-items-center">
+                <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
+              </div>
+              <img src="./assets/icons/setaVerdeE.svg" alt="" height="20px" />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="btn btn-light btn-block my-3 row secao_button button_ProcessoAvaliativo d-flex justify-content-between align-items-center"
+            >
+              <div class="d-flex align-items-center">
+                <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
+              </div>
+              <img src="./assets/icons/setaVerdeE.svg" alt="" height="20px" />
             </a>
           </div>
-        </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- VLIBRAS -->
+    <div vw class="enabled" style="z-index: 800">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
       </div>
     </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
 
-    <div class="row mb-4">
-      <div class="col-md-6">
-        <section class="mb-4 p-4 secao_ciclismo secao">
-          <div class="d-flex mb-2 justify-content-between align-items-center">
-            <h2>CICLISMO</h2>
-            <div class="bg-iconP">
-              <img src="./assets/icons/ciclismo.svg" alt="" class="bg-icon-imgP">
-            </div>
-          </div>
-          <div>
-            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
-              utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
-              embaralhou para fazer
-            </p>
-            <p>um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para
-              aeditoração eletrônica, permanecendo essencialmente
-            </p>
-            <p>Acesse o módulo no botão a seguir.</p>
-            <a href="#" target="_blank" class="btn btn-light btn-block px-2 row secao_button button_ciclismo">
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                  <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
-                </div>
-                <img src="./assets/icons/setaVerde.svg" alt="" height="20px">
-              </div>
-            </a>
-          </div>
-        </section>
-      </div>
-      <div class="col-md-6">
-        <section class="mb-4 p-4 secao_acampamento secao">
-          <div class="d-flex mb-2 justify-content-between align-items-center">
-            <h2>ACAMPAMENTO</h2>
-            <div class="bg-iconG p-2">
-              <img src="./assets/icons/acampamento.svg" alt="" class="bg-icon-imgG">
-            </div>
-          </div>
-          <div>
-            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
-              utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
-              embaralhou para fazer
-            </p>
-            <p>um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para
-              aeditoração eletrônica, permanecendo essencialmente
-            </p>
-            <p>Acesse o módulo no botão a seguir.</p>
-            <a href="#" target="_blank" class="btn btn-light btn-block px-2 row secao_button button_acampamento">
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                  <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
-                </div>
-                <img src="./assets/icons/setaRosa.svg" alt="" height="20px">
-              </div>
-            </a>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <section id="percursos" class="px-4 py-2 secao_ProcessoAvaliativo secao">
-      <div class="m-0 pt-4 d-flex justify-content-between align-items-center">
-        <h2 class="mb-0">PROCESSO AVALIATIVO</h2>
-        <div class="bg-iconG p-2">
-          <img src="./assets/icons/conquista.svg" alt="" class="bg-icon-imgG">
-        </div>
-      </div>
-      <div class="row align-items-center">
-        <div class="col-lg-7 mt-sm-3">
-          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
-            utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou
-            para fazer</p>
-          <p>um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a
-            editoração eletrônica, permanecendo essencialmente</p>
-          <p class="mb-0"><strong>Acesse as conquistas nos botões a seguir.</strong></p>
-        </div>
-        <div class="col-lg-5">
-          <a href="#" target="_blank"
-            class="btn btn-light btn-block my-3 px-2 row secao_button button_ProcessoAvaliativo">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center">
-                <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
-              </div>
-              <img src="./assets/icons/setaVerdeE.svg" alt="" height="20px">
-            </div>
-          </a>
-          <a href="#" target="_blank"
-            class="btn btn-light btn-block my-3 px-2 row secao_button button_ProcessoAvaliativo">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center">
-                <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
-              </div>
-              <img src="./assets/icons/setaVerdeE.svg" alt="" height="20px">
-            </div>
-          </a>
-          <a href="#" target="_blank"
-            class="btn btn-light btn-block my-3 px-2 row secao_button button_ProcessoAvaliativo">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center">
-                <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
-              </div>
-              <img src="./assets/icons/setaVerdeE.svg" alt="" height="20px">
-            </div>
-          </a>
-          <a href="#" target="_blank" class="btn btn-light btn-block my-3  row secao_button button_ProcessoAvaliativo">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center">
-                <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
-              </div>
-              <img src="./assets/icons/setaVerdeE.svg" alt="" height="20px">
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-
-  <!-- VLIBRAS -->
-  <div vw class="enabled" style="z-index: 800;">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>new window.VLibras.Widget("https://vlibras.gov.br/app");</script>
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
