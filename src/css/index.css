@@ -8,6 +8,7 @@ a {
 }
 
 p {
+  font-family: 'Poppins', sans-serif;
   font-size: 0.9em;
   font-weight: 400;
   color: #4f4f4f;
@@ -17,12 +18,19 @@ h1 {
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  font-size: 1.875rem;
+  font-size: 1.875em;
+}
+
+h2 {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.75em;
 }
 
 span {
   font-weight: 600;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .secao {
@@ -40,7 +48,7 @@ span {
 
 .explorando_texto {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125em;
   font-weight: 500;
   color: #4f4f4f;
 }
@@ -51,6 +59,10 @@ span {
 
 .explorando_secao {
   border-top-color: #0c7c77;
+}
+
+.btn:focus {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
 }
 
 .explorando_instrutores-Button {
@@ -66,7 +78,7 @@ span {
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
-  font-size: 0.625rem;
+  font-size: 0.625rem !important;
   font-weight: 600;
 }
 
@@ -108,8 +120,9 @@ span {
   border-top-color: #3391d1;
 }
 
-.butto_arvorismo,
-.secao_arvorismo h1 {
+.button_arvorismo,
+.button_arvorismo:hover,
+.secao_arvorismo h2 {
   color: #3391d1;
 }
 
@@ -118,7 +131,8 @@ span {
 }
 
 .button_pescaria,
-.secao_pescaria h1 {
+.button_pescaria:hover,
+.secao_pescaria h2 {
   color: #f7941e;
 }
 
@@ -127,7 +141,8 @@ span {
 }
 
 .button_ciclismo,
-.secao_ciclismo h1 {
+.button_ciclismo:hover,
+.secao_ciclismo h2 {
   color: #00a79d;
 }
 
@@ -136,7 +151,8 @@ span {
 }
 
 .button_acampamento,
-.secao_acampamento h1 {
+.button_acampamento:hover,
+.secao_acampamento h2 {
   color: #ed6b6b;
 }
 
@@ -145,7 +161,8 @@ span {
 }
 
 .button_ProcessoAvaliativo,
-.secao_ProcessoAvaliativo h1 {
+.button_ProcessoAvaliativo:hover,
+.secao_ProcessoAvaliativo h2 {
   color: #0c7c77;
 }
 
