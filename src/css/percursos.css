@@ -37,6 +37,17 @@ h3 {
   color: #696F8C;
 }
 
+h4 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+span {
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
 .sidebar {
   background-color: white;
   min-height: 100vh;
@@ -47,6 +58,7 @@ h3 {
   position: fixed;
   top: 0;
   left: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .sidebar.open {
@@ -118,6 +130,7 @@ h3 {
   width: 13.75rem;
   height: 3rem;
   border-radius: 20px;
+  transition: all .2s ease;
 }
 
 
@@ -127,9 +140,21 @@ h3 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.nav-list-button:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
 .nav-list-button:hover .sidebar_bg-iconP,
 .nav-list-button:hover .sidebar_bg-iconG {
   background-color: white;
+}
+
+.nav-list-button_arvorismo-span {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #3391D1;
 }
 
 .nav-list-button_pescaria-span {
@@ -217,7 +242,7 @@ h3 {
 }
 
 .butto_leitura,
-.secao_leitura h1 {
+.secao_leitura h4 {
   color: #3391D1;
 }
 
@@ -226,7 +251,7 @@ h3 {
 }
 
 .butto_registro,
-.secao_registro h1 {
+.secao_registro h4 {
   color: #7C7CC5;
 }
 
@@ -245,6 +270,31 @@ h3 {
   position: absolute;
   right: 16px;
   top: 4px;
+}
+
+.sidebar_grande {
+  display: none !important;
+}
+
+.sidebar_imgGrande {
+  display: none;
+}
+
+.sidebar.open .sidebar_imgGrande {
+  display: initial;
+}
+
+.sidebar.open .sidebar_grande {
+  display: flex !important;
+}
+
+.sidebar_iconOpen {
+  display: block;
+}
+
+.sidebar.open .sidebar_iconOpen,
+.sidebar.open .sidebar_imgPequena {
+  display: none;
 }
 
 .modulo_bg-iconP {
@@ -272,12 +322,13 @@ h3 {
   .modulo_bg-iconG {
     display: none;
   }
+
 }
 
 @media (max-width: 992px) {
   .modulo_bg-iconG {
-    width: 90px;
-    height: 60px;
+    width: 59px;
+    height: 56px;
   }
 
   .modulo_bg-icon-imgG {
@@ -298,31 +349,4 @@ h3 {
     right: 4px;
     top: 3px;
   }
-}
-
-
-
-.sidebar_grande {
-  display: none !important;
-}
-
-.sidebar_imgGrande {
-  display: none;
-}
-
-.sidebar.open .sidebar_imgGrande {
-  display: initial;
-}
-
-.sidebar.open .sidebar_grande {
-  display: flex !important;
-}
-
-.sidebar_iconOpen {
-  display: block;
-}
-
-.sidebar.open .sidebar_iconOpen,
-.sidebar.open .sidebar_imgPequena {
-  display: none;
 }
