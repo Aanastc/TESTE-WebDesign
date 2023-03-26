@@ -19,26 +19,29 @@
     />
 
     <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Folha de estilo  -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <main class="container my-5">
-      <section class="px-3 py-4 p-md-4 my-5 mx-0 explorando_secao secao">
-        <div class="row d-flex justify-content-between gap-4">
+      <section class="px-3 py-4 p-md-4 my-5 mx-0 secao secao__explorando">
+        <div class="row d-flex justify-content-between">
           <div
             class="col-5 col-sm-7 d-flex flex-column justify-content-between"
           >
-            <div class="explorando_texto">
+            <div class="explorando">
               <span>Olá, Explorador(a).</span>
-              <p class="mb-1">
+              <p class="mb-1 mt-2">
                 Receba nossas boas vindas! Este é o seu ambiente do curso de
               </p>
-              <h1>explorando parque do cocó</h1>
+              <h1 class="explorando__titulo">explorando parque do cocó</h1>
             </div>
             <div class="col-sm-5 col-lg-4 col-xl-3">
               <a
@@ -47,13 +50,13 @@
                 role="button"
                 aria-expanded="false"
                 aria-controls="collapseExample"
-                class="mb-4 mb-sm-0 row d-flex align-items-center justify-content-between explorando_instrutores-Button"
+                class="mb-4 mb-sm-0 row d-flex align-items-center justify-content-between instrutores-button"
               >
                 <div class="col-1 col-sm-2">
                   <img src="./assets/icons/instrutores.svg" alt="" />
                 </div>
                 <div class="col-6 pl-0 pl-sm-3 col-sm-8">
-                  <span class="explorando_instrutores-span ml-1">
+                  <span class="instrutores-button__label ml-1">
                     CONHEÇA OS INSTRUTORES
                   </span>
                 </div>
@@ -69,19 +72,19 @@
             >
               <a
                 href="#"
-                class="d-flex justify-content-center align-items-center explorando_buttons mb-2"
+                class="d-flex justify-content-center align-items-center mb-2 explorando-button"
               >
                 <img src="./assets/icons/bussula.svg" alt="" />
               </a>
               <a
                 href="#"
-                class="d-flex justify-content-center align-items-center explorando_buttons mb-2"
+                class="d-flex justify-content-center align-items-center mb-2 explorando-button"
               >
                 <img src="./assets/icons/mapa.svg" alt="" />
               </a>
               <a
                 href="#"
-                class="d-flex justify-content-center align-items-center explorando_buttons mb-2"
+                class="d-flex justify-content-center align-items-center mb-2 explorando-button"
               >
                 <img src="./assets/icons/placaDeDirecao.svg" alt="" />
               </a>
@@ -92,7 +95,7 @@
 
       <section
         id="instrutores"
-        class="mb-4 collapse instrutores_collapse secao"
+        class="mb-4 collapse secao instrutores-collapse"
       >
         <div
           class="row pt-2 px-4 d-flex justify-content-center align-items-center"
@@ -101,16 +104,16 @@
             <img
               src="./assets/icons/Ellipse.svg"
               alt=""
-              class="img-fluid instrutores_imagemEllipse"
+              class="img-fluid instrutores-collapse__img-secondary"
             />
             <img
               src="./assets/imgs/img-Colapse.png"
               alt=""
-              class="img-fluid instrutores_collapse-imagem"
+              class="img-fluid instrutores-collapse__img-primary"
             />
           </div>
           <div class="col-md-7 d-flex p-4">
-            <div class="instrutores_collapse-cardText p-4">
+            <div class="p-4 instrutores-collapse__card">
               <strong>Olá, Nome do Usuário.</strong>
               <p>
                 Somos Xiliane e Jovélio, seremos seus instrutores durante esta
@@ -128,14 +131,14 @@
 
       <div class="row mb-4">
         <div class="col-md-6">
-          <section class="mb-4 p-4 secao_arvorismo secao">
+          <section class="mb-4 p-4 secao secao__arvorismo">
             <div class="d-flex mb-2 justify-content-between align-items-center">
-              <h2>ARVORISMO</h2>
-              <div class="bg-iconP">
+              <h2 class="secao--titulo__arvorismo">ARVORISMO</h2>
+              <div class="icon">
                 <img
                   src="./assets/icons/arvorismo.svg"
                   alt=""
-                  class="bg-icon-imgP"
+                  class="icon__img icon__img--pequeno"
                 />
               </div>
             </div>
@@ -155,7 +158,7 @@
               <a
                 href="./percursos/arvorismo.html"
                 target="_blank"
-                class="btn btn-light btn-block px-2 row secao_button button_arvorism d-flex justify-content-between align-items-center"
+                class="btn btn-light btn-block px-2 row percurso-button percurso-button__arvorismo d-flex justify-content-between align-items-center"
               >
                 <div class="d-flex align-items-center">
                   <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
@@ -166,14 +169,14 @@
           </section>
         </div>
         <div class="col-md-6">
-          <section class="mb-4 p-4 secao_pescaria secao">
+          <section class="mb-4 p-4 secao secao__pescaria">
             <div class="d-flex mb-2 justify-content-between align-items-center">
-              <h2>PESCARIA</h2>
-              <div class="bg-iconP">
+              <h2 class="secao--titulo__pescaria">PESCARIA</h2>
+              <div class="icon">
                 <img
                   src="./assets/icons/pescaria.svg"
                   alt=""
-                  class="bg-icon-imgP"
+                  class="icon__img icon__img--pequeno"
                 />
               </div>
             </div>
@@ -193,7 +196,7 @@
               <a
                 href="./percursos/pescaria.html"
                 target="_blank"
-                class="btn btn-light btn-block px-2 row secao_button button_pescaria d-flex justify-content-between align-items-center"
+                class="btn btn-light btn-block px-2 row percurso-button percurso-button__pescaria d-flex justify-content-between align-items-center"
               >
                 <div class="d-flex align-items-center">
                   <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
@@ -211,14 +214,14 @@
 
       <div class="row mb-4">
         <div class="col-md-6">
-          <section class="mb-4 p-4 secao_ciclismo secao">
+          <section class="mb-4 p-4 secao secao__ciclismo">
             <div class="d-flex mb-2 justify-content-between align-items-center">
-              <h2>CICLISMO</h2>
-              <div class="bg-iconP">
+              <h2 class="secao--titulo__ciclismo">CICLISMO</h2>
+              <div class="icon">
                 <img
                   src="./assets/icons/ciclismo.svg"
                   alt=""
-                  class="bg-icon-imgP"
+                  class="icon__img icon__img--pequeno"
                 />
               </div>
             </div>
@@ -238,7 +241,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-light btn-block px-2 row secao_button button_ciclismo d-flex justify-content-between align-items-center"
+                class="btn btn-light btn-block px-2 row percurso-button percurso-button__ciclismo d-flex justify-content-between align-items-center"
               >
                 <div class="d-flex align-items-center">
                   <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
@@ -249,14 +252,14 @@
           </section>
         </div>
         <div class="col-md-6">
-          <section class="mb-4 p-4 secao_acampamento secao">
+          <section class="mb-4 p-4 secao secao__acampamento">
             <div class="d-flex mb-2 justify-content-between align-items-center">
-              <h2>ACAMPAMENTO</h2>
-              <div class="bg-iconG p-2">
+              <h2 class="secao--titulo__acampamento">ACAMPAMENTO</h2>
+              <div class="p-2 icon">
                 <img
                   src="./assets/icons/acampamento.svg"
                   alt=""
-                  class="bg-icon-imgG"
+                  class="icon__img--grande icon__img"
                 />
               </div>
             </div>
@@ -276,7 +279,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="btn btn-light btn-block px-2 row secao_button button_acampamento d-flex justify-content-between align-items-center"
+                class="btn btn-light btn-block px-2 row percurso-button percurso-button__acampamento d-flex justify-content-between align-items-center"
               >
                 <div class="d-flex align-items-center">
                   <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
@@ -288,14 +291,16 @@
         </div>
       </div>
 
-      <section class="px-4 py-2 secao_ProcessoAvaliativo secao">
+      <section class="px-4 py-2 secao secao__processo-avaliativo">
         <div class="m-0 pt-4 d-flex justify-content-between align-items-center">
-          <h2 class="mb-0">PROCESSO AVALIATIVO</h2>
-          <div class="bg-iconG p-2">
+          <h2 class="mb-0 secao--titulo__processo-avaliativo">
+            PROCESSO AVALIATIVO
+          </h2>
+          <div class="p-2 icon">
             <img
               src="./assets/icons/conquista.svg"
               alt=""
-              class="bg-icon-imgG"
+              class="icon__img--grande icon__img"
             />
           </div>
         </div>
@@ -318,7 +323,7 @@
             <a
               href="#"
               target="_blank"
-              class="btn btn-light btn-block my-3 px-2 row secao_button button_ProcessoAvaliativo d-flex justify-content-between align-items-center"
+              class="btn btn-light btn-block my-3 px-2 row d-flex justify-content-between align-items-center percurso-button percurso-button__processo-avaliativo"
             >
               <div class="d-flex align-items-center">
                 <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
@@ -328,7 +333,7 @@
             <a
               href="#"
               target="_blank"
-              class="btn btn-light btn-block my-3 px-2 row secao_button button_ProcessoAvaliativo d-flex justify-content-between align-items-center"
+              class="btn btn-light btn-block my-3 px-2 row d-flex justify-content-between align-items-center percurso-button percurso-button__processo-avaliativo"
             >
               <div class="d-flex align-items-center">
                 <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
@@ -338,7 +343,7 @@
             <a
               href="#"
               target="_blank"
-              class="btn btn-light btn-block my-3 px-2 row secao_button button_ProcessoAvaliativo d-flex justify-content-between align-items-center"
+              class="btn btn-light btn-block my-3 px-2 row d-flex justify-content-between align-items-center percurso-button percurso-button__processo-avaliativo"
             >
               <div class="d-flex align-items-center">
                 <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>
@@ -348,7 +353,7 @@
             <a
               href="#"
               target="_blank"
-              class="btn btn-light btn-block my-3 row secao_button button_ProcessoAvaliativo d-flex justify-content-between align-items-center"
+              class="btn btn-light btn-block my-3 row d-flex justify-content-between align-items-center percurso-button percurso-button__processo-avaliativo"
             >
               <div class="d-flex align-items-center">
                 <span class="ml-3 d-sm-flex">ACESSAR CONTEÚDO</span>

@@ -1,36 +1,33 @@
-main {
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto', sans-serif;
-}
-
-a {
-  text-decoration: none !important;
-}
-
-p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.9em;
-  font-weight: 400;
+body {
   color: #4f4f4f;
 }
 
-h1 {
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.875em;
+body,
+input,
+textarea,
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
+h1,
 h2 {
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-  font-size: 1.75em;
 }
 
-span {
-  font-weight: 600;
-  font-size: 0.8em;
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+*:focus {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
 }
 
 .secao {
@@ -41,31 +38,47 @@ span {
   border-top-style: solid;
 }
 
-.secao_button {
-  border-radius: 25px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.secao {
+  background-color: #f5f5f7;
+  box-shadow: 0px 10px 15px 0px #00000026;
+  border-radius: 10px;
+  border-top-width: 0.5rem;
+  border-top-style: solid;
 }
 
-.explorando_texto {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.125em;
-  font-weight: 500;
-  color: #4f4f4f;
-}
-
-.explorando_texto h1 {
-  color: #0c7c77;
-}
-
-.explorando_secao {
+.secao__explorando {
   border-top-color: #0c7c77;
 }
 
-.btn:focus {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
+.secao__arvorismo {
+  border-top-color: #3391d1;
 }
 
-.explorando_instrutores-Button {
+.secao__pescaria {
+  border-top-color: #f7941e;
+}
+
+.secao__ciclismo {
+  border-top-color: #00a79d;
+}
+
+.secao__acampamento {
+  border-top-color: #ed6b6b;
+}
+
+.secao__processo-avaliativo {
+  border-top-color: #0c7c77;
+}
+
+.explorando {
+  font-size: 1.125em;
+}
+
+.explorando__titulo {
+  color: #0c7c77;
+}
+
+.instrutores-button {
   background-color: #0c7c77;
   width: 15.813rem;
   height: 2.5rem;
@@ -73,16 +86,17 @@ span {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.explorando_instrutores-span {
+.instrutores-button__label {
   color: #ffffff;
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.625rem !important;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
 }
 
-.explorando_buttons {
+.explorando-button {
   background-color: #fdfdfd;
   border-radius: 3.125rem;
   width: 3.438rem;
@@ -90,93 +104,71 @@ span {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.instrutores_collapse {
+.percurso-button {
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+}
+
+.instrutores-collapse {
   border: none;
   background-image: url('../assets/imgs/bgColapse.png');
   background-size: cover;
 }
 
-.instrutores_imagemEllipse {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  height: 84%;
-}
-
-.instrutores_collapse-imagem {
+.instrutores-collapse__img-primary {
   position: relative;
   top: -1px;
   z-index: 1;
   width: 28.125rem;
 }
 
-.instrutores_collapse-cardText {
+.instrutores-collapse__img-secondary {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 84%;
+}
+
+.instrutores-collapse__card {
   background-color: #f6f1ed;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.secao_arvorismo {
-  border-top-color: #3391d1;
-}
-
-.button_arvorismo,
-.button_arvorismo:hover,
-.secao_arvorismo h2 {
+.percurso-button__arvorismo,
+.percurso-button__arvorismo:hover,
+.secao--titulo__arvorismo {
   color: #3391d1;
 }
 
-.secao_pescaria {
-  border-top-color: #f7941e;
-}
-
-.button_pescaria,
-.button_pescaria:hover,
-.secao_pescaria h2 {
+.percurso-button__pescaria,
+.percurso-button__pescaria:hover,
+.secao--titulo__pescaria {
   color: #f7941e;
 }
 
-.secao_ciclismo {
-  border-top-color: #00a79d;
-}
-
-.button_ciclismo,
-.button_ciclismo:hover,
-.secao_ciclismo h2 {
+.percurso-button__ciclismo,
+.percurso-button__ciclismo:hover,
+.secao--titulo__ciclismo {
   color: #00a79d;
 }
 
-.secao_acampamento {
-  border-top-color: #ed6b6b;
-}
-
-.button_acampamento,
-.button_acampamento:hover,
-.secao_acampamento h2 {
+.percurso-button__acampamento,
+.percurso-button__acampamento:hover,
+.secao--titulo__acampamento {
   color: #ed6b6b;
 }
 
-.secao_ProcessoAvaliativo {
-  border-top-color: #0c7c77;
-}
-
-.button_ProcessoAvaliativo,
-.button_ProcessoAvaliativo:hover,
-.secao_ProcessoAvaliativo h2 {
+.percurso-button__processo-avaliativo,
+.percurso-button__processo-avaliativo:hover,
+.secao--titulo__processo-avaliativo {
   color: #0c7c77;
 }
 
-
-.bg-icon-imgG {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  right: 22px;
-  top: 4px;
-}
-
-.bg-iconP,
-.bg-iconG {
+.icon {
   background-color: #ffffff;
   border-radius: 3.125rem;
   display: block;
@@ -185,49 +177,42 @@ span {
   position: relative;
 }
 
-.bg-icon-imgP {
-  width: 93px;
-  height: 82px;
+.icon__img {
   position: absolute;
-  right: 12px;
   top: 4px;
 }
 
+.icon__img--pequeno {
+  width: 93px;
+  height: 82px;
+  right: 12px;
+}
+
+.icon__img--grande {
+  width: 70px;
+  height: 70px;
+  right: 22px;
+}
+
 @media (max-width: 310px) {
-  .explorando_instrutores-Button {
+  .instrutores-button {
     width: 12.313rem;
   }
 }
 
 @media (max-width: 576px) {
-  .bg-iconG {
-    display: none;
-  }
-
-  .bg-iconP {
+  .icon {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
-  .bg-iconG {
+  .icon {
     width: 40px;
     height: 40px;
   }
 
-  .bg-icon-imgG {
-    width: 44px;
-    height: 38px;
-    right: 6px;
-    top: 2px;
-  }
-
-  .bg-iconP {
-    width: 40px;
-    height: 40px;
-  }
-
-  .bg-icon-imgP {
+  .icon__img {
     width: 44px;
     height: 38px;
     right: 6px;
@@ -236,24 +221,12 @@ span {
 }
 
 @media (max-width: 992px) {
-  .bg-iconG {
+  .icon {
     width: 60px;
     height: 60px;
   }
 
-  .bg-icon-imgG {
-    width: 66px;
-    height: 58px;
-    right: 9px;
-    top: 3px;
-  }
-
-  .bg-iconP {
-    width: 60px;
-    height: 60px;
-  }
-
-  .bg-icon-imgP {
+  .icon__img {
     width: 66px;
     height: 58px;
     right: 9px;
