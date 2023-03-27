@@ -1,23 +1,3 @@
-body {
-  color: #4f4f4f;
-}
-
-body,
-input,
-textarea,
-button {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-}
-
-h1,
-h2 {
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-}
-
 h1 {
   font-size: 2rem;
 }
@@ -27,47 +7,8 @@ h2 {
 }
 
 *:focus {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
-}
-
-.secao {
-  background-color: #f5f5f7;
-  box-shadow: 0px 10px 15px 0px #00000026;
-  border-radius: 10px;
-  border-top-width: 0.5rem;
-  border-top-style: solid;
-}
-
-.secao {
-  background-color: #f5f5f7;
-  box-shadow: 0px 10px 15px 0px #00000026;
-  border-radius: 10px;
-  border-top-width: 0.5rem;
-  border-top-style: solid;
-}
-
-.secao__explorando {
-  border-top-color: #0c7c77;
-}
-
-.secao__arvorismo {
-  border-top-color: #3391d1;
-}
-
-.secao__pescaria {
-  border-top-color: #f7941e;
-}
-
-.secao__ciclismo {
-  border-top-color: #00a79d;
-}
-
-.secao__acampamento {
-  border-top-color: #ed6b6b;
-}
-
-.secao__processo-avaliativo {
-  border-top-color: #0c7c77;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
 }
 
 .explorando {
@@ -93,7 +34,7 @@ h2 {
   text-transform: uppercase;
   font-size: 0.625rem !important;
   font-weight: 600;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .explorando-button {
@@ -104,17 +45,9 @@ h2 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.percurso-button {
-  border-radius: 25px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.875rem;
-}
-
 .instrutores-collapse {
   border: none;
-  background-image: url('../assets/imgs/bgColapse.png');
+  background-image: url("../assets/imgs/bgColapse.png");
   background-size: cover;
 }
 
@@ -136,36 +69,6 @@ h2 {
   background-color: #f6f1ed;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.percurso-button__arvorismo,
-.percurso-button__arvorismo:hover,
-.secao--titulo__arvorismo {
-  color: #3391d1;
-}
-
-.percurso-button__pescaria,
-.percurso-button__pescaria:hover,
-.secao--titulo__pescaria {
-  color: #f7941e;
-}
-
-.percurso-button__ciclismo,
-.percurso-button__ciclismo:hover,
-.secao--titulo__ciclismo {
-  color: #00a79d;
-}
-
-.percurso-button__acampamento,
-.percurso-button__acampamento:hover,
-.secao--titulo__acampamento {
-  color: #ed6b6b;
-}
-
-.percurso-button__processo-avaliativo,
-.percurso-button__processo-avaliativo:hover,
-.secao--titulo__processo-avaliativo {
-  color: #0c7c77;
 }
 
 .icon {

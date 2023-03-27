@@ -1,0 +1,115 @@
+body {
+  color: #4f4f4f;
+  min-height: 100vh;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.secao {
+  background-color: #f5f5f7;
+  box-shadow: 0px 10px 15px 0px #00000026;
+  border-radius: 10px;
+  border-top-width: 0.5rem;
+  border-top-style: solid;
+}
+
+.secao__explorando {
+  border-top-color: #0c7c77;
+}
+
+.secao__leitura,
+.secao__arvorismo {
+  border-top-color: #3391d1;
+}
+
+.secao__pescaria {
+  border-top-color: #f7941e;
+}
+
+.secao__ciclismo {
+  border-top-color: #00a79d;
+}
+
+.secao__acampamento {
+  border-top-color: #ed6b6b;
+}
+
+.secao__processo-avaliativo {
+  border-top-color: #0c7c77;
+}
+
+.secao__registros {
+  border-top-color: #7c7cc5;
+}
+
+.percurso-button {
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+}
+
+.percurso-button__arvorismo,
+.percurso-button__arvorismo:hover,
+.percurso-button__leitura,
+.percurso-button__leitura:hover,
+.secao--titulo__arvorismo,
+.secao--titulo__leitura {
+  color: #3391d1;
+}
+
+.percurso-button__pescaria,
+.percurso-button__pescaria:hover,
+.secao--titulo__pescaria {
+  color: #f7941e;
+}
+
+.percurso-button__ciclismo,
+.percurso-button__ciclismo:hover,
+.secao--titulo__ciclismo {
+  color: #00a79d;
+}
+
+.percurso-button__acampamento,
+.percurso-button__acampamento:hover,
+.secao--titulo__acampamento {
+  color: #ed6b6b;
+}
+
+.percurso-button__processo-avaliativo,
+.percurso-button__processo-avaliativo:hover,
+.secao--titulo__processo-avaliativo {
+  color: #0c7c77;
+}
+
+.percurso-button__registros,
+.percurso-button__registros:hover,
+.secao--titulo__registros {
+  color: #7c7cc5;
+}
+
+.page__emBreve {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}

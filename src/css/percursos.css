@@ -1,98 +1,72 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  min-height: 100vh;
-}
-
-a {
-  text-decoration: none !important;
-}
-
-p,
-ul {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: #4f4f4f;
-}
-
 h1 {
   font-size: 2.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 h2 {
-  color: #696F8C;
-  font-weight: 700;
-  font-size: 1rem;
-  text-transform: uppercase;
+  font-size: 1.75rem;
 }
 
 h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  margin: 0;
-  color: #696F8C;
+  color: #696f8c;
+  font-size: 1rem;
 }
 
-h4 {
-  font-weight: 700;
-  font-size: 1.75rem;
-  text-transform: uppercase;
+*:focus {
+  box-shadow: none !important;
 }
 
-span {
-  font-size: 0.8em;
-  font-weight: 700;
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block;
 }
 
 .sidebar {
-  background-color: white;
+  background-color: #fff;
   min-height: 100vh;
   width: 4.875rem;
-  padding: 6px 14px;
+  padding: 0.5rem 1rem;
   z-index: 99;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   position: fixed;
   top: 0;
   left: 0;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-family: "Roboto", sans-serif;
 }
 
 .sidebar.open {
   width: 15.625rem;
 }
 
-.sidebar .logo_details {
-  transition: all 0.5s ease;
+.sidebar.open .hidden {
+  display: flex !important;
 }
 
-.button_sidebar {
+.sidebar.open .visible {
+  display: none;
+}
+
+.toggle-button {
   height: 1.563rem;
   border: none;
-  background-color: #0C7C77;
+  background-color: #0c7c77;
   border-radius: 25px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 0.875rem;
+  font-family: "Roboto", sans-serif;
 }
 
-.btn:focus {
-  box-shadow: none !important;
-}
-
-.button_sidebar-text {
+.toggle-button__label {
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.nav-list {
-  list-style-type: none;
-}
-
-.sidebar_bg-iconG {
-  background-color: #F4F6FA;
+.nav-icon {
+  background-color: #f4f6fa;
   border-radius: 20px;
   display: block;
   width: 2.188rem;
@@ -100,24 +74,7 @@ span {
   position: relative;
 }
 
-.sidebar_bg-iconG-img {
-  width: 2.063rem;
-  height: 2.188rem;
-  position: absolute;
-  right: 12px;
-  top: -2px;
-}
-
-.sidebar_bg-iconP {
-  background-color: #F4F6FA;
-  border-radius: 20px;
-  display: block;
-  width: 2.188rem;
-  height: 2.25rem;
-  position: relative;
-}
-
-.sidebar_bg-iconP-img {
+.nav-icon__img--pequeno {
   width: 2.5rem;
   height: 2.5rem;
   position: absolute;
@@ -125,137 +82,107 @@ span {
   top: -2px;
 }
 
-.nav-list-button {
+.nav-icon__img--grande {
+  width: 2.063rem;
+  height: 2.188rem;
+  position: absolute;
+  right: 12px;
+  top: -2px;
+}
+
+.nav-item {
   background-color: white;
   width: 13.75rem;
   height: 3rem;
   border-radius: 20px;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
-
-/* colocar o active depois */
-.nav-list-button:hover {
-  background-color: #F4F6FA;
+.nav-item:hover,
+.nav-item.active {
+  background-color: #f4f6fa;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.nav-list-button:active {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-.nav-list-button:hover .sidebar_bg-iconP,
-.nav-list-button:hover .sidebar_bg-iconG {
+.nav-item:hover .nav-icon,
+.nav-item.active .nav-icon {
   background-color: white;
 }
 
-.nav-list-button_arvorismo-span {
+.nav-item__text {
   font-size: 0.7rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: #3391D1;
 }
 
-.nav-list-button_pescaria-span {
-  font-size: 0.7rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #F7941E;
+.nav-item__text--arvorismo {
+  color: #3391d1;
 }
 
-.nav-list-button_ciclismo-span {
-  font-size: 0.7rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #00A79D;
+.nav-item__text--pescaria {
+  color: #f7941e;
 }
 
-.nav-list-button_acampamento-span {
-  font-size: 0.7rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #ED6B6B;
+.nav-item__text--ciclismo {
+  color: #00a79d;
 }
 
-.nav-list-button_processo-span {
-  font-size: 0.7rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #0C7C77;
+.nav-item__text--acampamento {
+  color: #ed6b6b;
 }
 
-.home-section {
+.nav-item__text--processo {
+  color: #0c7c77;
+}
+
+.conteudo {
   position: relative;
   min-height: 100vh;
   top: 0;
   left: 4.875rem;
   z-index: 2;
   width: calc(100% - 4.875rem);
-  transition: all .5s ease;
-  background-color: #FCFCFC;
+  transition: all 0.5s ease;
+  background-color: #fcfcfc;
 }
 
-.sidebar.open~.home-section {
+.sidebar.open~.conteudo {
   left: 15.625rem;
   width: calc(100% - 15.625rem);
 }
 
-.home-section_modulo {
+.sumario {
   gap: 20px;
 }
 
-.home-section_arvorsimo_text h1 {
-  color: #3391D1;
+.sumario__titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  margin: 0;
+  color: #696f8c;
+  text-transform: uppercase;
 }
 
-.home-section_pescaria_text h1 {
-  color: #F7941E;
-}
-
-.box-modulo {
-  font-family: 'Poppins', sans-serif;
+.sumario__modulo {
+  font-family: "Poppins", sans-serif;
   display: inline-block;
-  background-color: #EDEFF5;
-  color: #696F8C;
+  background-color: #edeff5;
+  color: #696f8c;
   border-radius: 10px;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 0.7rem;
+  font-size: 0.75rem !important;
 }
 
-.secao {
-  background-color: #f5f5f7;
-  box-shadow: 0px 10px 15px 0px #00000026;
-  border-radius: 10px;
-  border-top-width: 0.5rem;
-  border-top-style: solid;
+.arvorismo-text {
+  color: #3391d1;
 }
 
-.secao_button {
-  border-radius: 25px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.pescaria-text {
+  color: #f7941e;
 }
 
-.secao_leitura {
-  border-top-color: #3391D1;
-}
-
-.butto_leitura,
-.secao_leitura h4 {
-  color: #3391D1;
-}
-
-.secao_registro {
-  border-top-color: #7C7CC5;
-}
-
-.butto_registro,
-.secao_registro h4 {
-  color: #7C7CC5;
-}
-
-.modulo_bg-iconG {
+.icon-registro,
+.icon-leitura {
   background-color: #ffffff;
   border-radius: 3.125rem;
   display: block;
@@ -264,7 +191,7 @@ span {
   position: relative;
 }
 
-.modulo_bg-icon-imgG {
+.icon-registro__img {
   width: 62px;
   height: 65px;
   position: absolute;
@@ -272,41 +199,7 @@ span {
   top: 4px;
 }
 
-.sidebar_grande {
-  display: none !important;
-}
-
-.sidebar_imgGrande {
-  display: none;
-}
-
-.sidebar.open .sidebar_imgGrande {
-  display: initial;
-}
-
-.sidebar.open .sidebar_grande {
-  display: flex !important;
-}
-
-.sidebar_iconOpen {
-  display: block;
-}
-
-.sidebar.open .sidebar_iconOpen,
-.sidebar.open .sidebar_imgPequena {
-  display: none;
-}
-
-.modulo_bg-iconP {
-  background-color: #ffffff;
-  border-radius: 3.125rem;
-  display: block;
-  width: 70px;
-  height: 70px;
-  position: relative;
-}
-
-.modulo_bg-icon-imgP {
+.icon-leitura__img {
   width: 80px;
   height: 70px;
   position: absolute;
@@ -315,35 +208,32 @@ span {
 }
 
 @media (max-width: 768px) {
-  .modulo_bg-iconP {
+
+  .icon-leitura,
+  .icon-registro {
     display: none;
   }
-
-  .modulo_bg-iconG {
-    display: none;
-  }
-
 }
 
 @media (max-width: 992px) {
-  .modulo_bg-iconG {
+  .icon-registro {
     width: 59px;
     height: 56px;
   }
 
-  .modulo_bg-icon-imgG {
+  .icon-registro__img {
     width: 68px;
     height: 50px;
     right: 4px;
     top: 3px;
   }
 
-  .modulo_bg-iconP {
+  .icon-leitura {
     width: 60px;
     height: 60px;
   }
 
-  .modulo_bg-icon-imgP {
+  .icon-leitura__img {
     width: 60px;
     height: 60px;
     right: 4px;

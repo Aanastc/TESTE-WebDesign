@@ -26,69 +26,70 @@
     />
 
     <!-- Folha de estilo -->
+    <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/percursos.css" />
   </head>
   <body>
     <aside class="sidebar d-flex flex-column">
-      <div
-        class="logo_details d-flex flex-column justify-content-center align-items-center"
-      >
+      <div class="d-flex flex-column justify-content-center align-items-center">
         <div class="p-4">
           <img
-            src="../assets/icons/Logo.svg"
-            alt=""
-            class="mb-4 sidebar_imgGrande"
-          />
-          <img
+            id="logo"
             src="../assets/icons/logoMenor.svg"
-            alt=""
-            class="mb-4 sidebar_imgPequena"
+            alt="logo da unifor"
+            class="mb-4"
           />
         </div>
         <button class="p-0 bx-menu w-100 btn" id="btn">
-          <div class="sidebar_iconOpen button_sidebar">
-            <img src="../assets/icons/setaDireita.svg" alt="" class="" />
+          <div class="visible toggle-button">
+            <img
+              src="../assets/icons/setaDireita.svg"
+              alt="seta para direita"
+            />
           </div>
           <div
-            class="p-2 sidebar_grande d-flex justify-content-between align-items-center button_sidebar"
+            class="p-2 hidden d-flex justify-content-between align-items-center toggle-button"
           >
-            <img src="../assets/icons/setaEsquerda.svg" alt="" />
-            <p class="mb-0 button_sidebar-text">recuar</p>
+            <img
+              src="../assets/icons/setaEsquerda.svg"
+              alt="seta para esquerda"
+            />
+            <p class="mb-0 toggle-button__label">recuar</p>
           </div>
         </button>
       </div>
       <ul
-        class="nav-list pl-2 pt-4 d-flex flex-column justify-content-center align-items-center"
+        class="pl-2 mt-4 d-flex flex-column justify-content-center align-items-center list-unstyled"
       >
         <li class="mb-2">
-          <a href="./arvorismo.html" class="mb-4 mb-sm-0">
-            <div class="sidebar_iconOpen sidebar_bg-iconP">
+          <a href="./arvorismo.html" class="mb-4 mb-sm-0 text-decoration-none">
+            <div class="visible nav-icon">
               <img
                 src="../assets/icons/arvorismo.svg"
-                alt=""
-                class="sidebar_bg-iconP-img"
+                alt="capacete"
+                class="nav-icon__img--pequeno"
               />
             </div>
 
             <div
-              class="row d-flex align-items-center justify-content-between nav-list-button sidebar_grande"
+              class="row d-flex align-items-center justify-content-between nav-item hidden active"
             >
-              <div class="col-1 col-sm-2 sidebar_bg-iconP">
+              <div class="col-1 col-sm-2 nav-icon">
                 <img
                   src="../assets/icons/arvorismo.svg"
-                  alt=""
-                  class="sidebar_bg-iconP-img"
+                  alt="capacete"
+                  class="nav-icon__img--pequeno"
                 />
               </div>
               <div class="col-5 pl-1 col-sm-8">
-                <span class="nav-list-button_arvorismo-span ml-1">
+                <span class="nav-item__text nav-item__text--arvorismo ml-1">
                   arvorismo
                 </span>
               </div>
               <div class="col-2 ml-sm-auto">
                 <img
                   src="../assets/icons/setaAzul.svg"
-                  alt=""
+                  alt="seta azul para direita"
                   style="height: 16px"
                 />
               </div>
@@ -96,34 +97,34 @@
           </a>
         </li>
         <li class="mb-2">
-          <a class="mb-4 mb-sm-0" href="./pescaria.html">
-            <div class="sidebar_iconOpen sidebar_bg-iconP">
+          <a href="./pescaria.html" class="mb-4 mb-sm-0 text-decoration-none">
+            <div class="visible nav-icon">
               <img
                 src="../assets/icons/pescaria.svg"
-                alt=""
-                class="sidebar_bg-iconP-img"
+                alt="peixe laranja"
+                class="nav-icon__img--pequeno"
               />
             </div>
 
             <div
-              class="row d-flex align-items-center justify-content-between nav-list-button sidebar_grande"
+              class="row d-flex align-items-center justify-content-between nav-item hidden"
             >
-              <div class="col-1 col-sm-2 sidebar_bg-iconP">
+              <div class="col-1 col-sm-2 nav-icon">
                 <img
                   src="../assets/icons/pescaria.svg"
-                  alt=""
-                  class="sidebar_bg-iconP-img"
+                  alt="peixe laranja"
+                  class="nav-icon__img--pequeno"
                 />
               </div>
               <div class="col-5 pl-1 col-sm-8">
-                <span class="nav-list-button_pescaria-span ml-1">
+                <span class="nav-item__text nav-item__text--pescaria ml-1">
                   PESCARIA
                 </span>
               </div>
               <div class="col-2 ml-sm-auto">
                 <img
                   src="../assets/icons/setaLaranja.svg"
-                  alt=""
+                  alt="seta laranja para direita"
                   style="height: 16px"
                 />
               </div>
@@ -131,34 +132,34 @@
           </a>
         </li>
         <li class="mb-2">
-          <a class="mb-4 mb-sm-0" href="#">
-            <div class="sidebar_iconOpen sidebar_bg-iconP">
+          <a href="#" class="mb-4 mb-sm-0 text-decoration-none">
+            <div class="visible nav-icon">
               <img
                 src="../assets/icons/ciclismo.svg"
-                alt=""
-                class="sidebar_bg-iconP-img"
+                alt="bicicleta"
+                class="nav-icon__img--pequeno"
               />
             </div>
 
             <div
-              class="row d-flex align-items-center justify-content-between nav-list-button sidebar_grande"
+              class="row d-flex align-items-center justify-content-between nav-item hidden"
             >
-              <div class="col-1 col-sm-2 sidebar_bg-iconP">
+              <div class="col-1 col-sm-2 nav-icon">
                 <img
                   src="../assets/icons/ciclismo.svg"
-                  alt=""
-                  class="sidebar_bg-iconP-img"
+                  alt="bicicleta"
+                  class="nav-icon__img--pequeno"
                 />
               </div>
               <div class="col-5 pl-1 col-sm-8">
-                <span class="nav-list-button_ciclismo-span ml-1">
+                <span class="nav-item__text nav-item__text--ciclismo ml-1">
                   CICLISMO
                 </span>
               </div>
               <div class="col-2 ml-sm-auto">
                 <img
                   src="../assets/icons/setaVerde.svg"
-                  alt=""
+                  alt="seta verde para direita"
                   style="height: 16px"
                 />
               </div>
@@ -166,34 +167,34 @@
           </a>
         </li>
         <li class="mb-2">
-          <a href="" class="mb-4 mb-sm-0">
-            <div class="sidebar_iconOpen sidebar_bg-iconG">
+          <a href="" class="mb-4 mb-sm-0 text-decoration-none">
+            <div class="visible nav-icon">
               <img
                 src="../assets/icons/acampamento.svg"
-                alt=""
-                class="sidebar_bg-iconG-img"
+                alt="barraca de acampamento rosa"
+                class="nav-icon__img--grande"
               />
             </div>
 
             <div
-              class="row d-flex align-items-center justify-content-between nav-list-button sidebar_grande"
+              class="row d-flex align-items-center justify-content-between nav-item hidden"
             >
-              <div class="col-1 col-sm-2 sidebar_bg-iconG">
+              <div class="col-1 col-sm-2 nav-icon">
                 <img
                   src="../assets/icons/acampamento.svg"
-                  alt=""
-                  class="sidebar_bg-iconG-img"
+                  alt="barraca de acampamento rosa"
+                  class="nav-icon__img--grande"
                 />
               </div>
               <div class="col-5 pl-1 col-sm-8">
-                <span class="nav-list-button_acampamento-span ml-1">
+                <span class="nav-item__text nav-item__text--acampamento ml-1">
                   acampamento
                 </span>
               </div>
               <div class="col-2 ml-sm-auto">
                 <img
                   src="../assets/icons/setaRosa.svg"
-                  alt=""
+                  alt="seta rosa para direita"
                   style="height: 16px"
                 />
               </div>
@@ -201,34 +202,38 @@
           </a>
         </li>
         <li class="mb-2">
-          <a id="btn-sidebar" href="" class="mb-4 mb-sm-0">
-            <div class="sidebar_iconOpen sidebar_bg-iconG">
+          <a
+            href="./breve.html"
+            target="_blank"
+            class="mb-4 mb-sm-0 text-decoration-none"
+          >
+            <div class="visible nav-icon">
               <img
                 src="../assets/icons/conquista.svg"
-                alt=""
-                class="sidebar_bg-iconG-img"
+                alt="canivete verde"
+                class="nav-icon__img--grande"
               />
             </div>
 
             <div
-              class="row d-flex align-items-center justify-content-between nav-list-button sidebar_grande"
+              class="row d-flex align-items-center justify-content-between nav-item hidden"
             >
-              <div class="col-1 col-sm-2 sidebar_bg-iconG">
+              <div class="col-1 col-sm-2 nav-icon">
                 <img
                   src="../assets/icons/conquista.svg"
-                  alt=""
-                  class="sidebar_bg-iconG-img"
+                  alt="canivete verde"
+                  class="nav-icon__img--grande"
                 />
               </div>
               <div class="col-5 pl-1 col-sm-8">
-                <span class="nav-list-button_processo-span ml-1">
+                <span class="nav-item__text nav-item__text--processo ml-1">
                   PROCESSO AVALIATIVO
                 </span>
               </div>
               <div class="col-2 ml-sm-auto">
                 <img
                   src="../assets/icons/setaVerdeE.svg"
-                  alt=""
+                  alt="seta verde para direita"
                   style="height: 16px"
                 />
               </div>
@@ -238,28 +243,28 @@
       </ul>
     </aside>
 
-    <main class="home-section py-2 px-4">
+    <main class="conteudo py-2 px-4">
       <div class="home-section_arvorismo">
         <div class="mb-4 d-flex justify-content-start">
           <div
-            class="ml-4 d-flex justify-content-between align-items-start flex-sm-row flex-column align-items-sm-center home-section_modulo"
+            class="ml-4 d-flex justify-content-between align-items-start flex-sm-row flex-column align-items-sm-center sumario"
           >
-            <h3>explorando o parque do cocó</h3>
-            <span class="box-modulo px-4 py-2">módulo 1</span>
+            <strong class="sumario__titulo">explorando o parque do cocó</strong>
+            <span class="px-4 py-2 sumario__modulo">módulo 1</span>
           </div>
         </div>
         <div class="row d-flex justify-content-center">
           <div class="col-sm-4 p-4">
             <img
               src="../assets/imgs/imgArvorismo.png"
-              alt=""
+              alt="instrutora"
               class="img-fluid"
             />
           </div>
           <div class="col-sm-8 mt-4">
-            <div class="mb-4 w-100 home-section_arvorsimo_text">
-              <h1>ARVORISMO</h1>
-              <h2>que bom te encontrar aqui, explorador(a)!</h2>
+            <div class="mb-4 w-100">
+              <h1 class="arvorismo-text">ARVORISMO</h1>
+              <h3>que bom te encontrar aqui, explorador(a)!</h3>
               <p>
                 Vamos iniciar o Módulo 1. Neste espaço, você contará com um
                 vídeo introdutório e um material de leitura
@@ -279,19 +284,18 @@
             </div>
             <img
               src="../assets/imgs/frameArvorismo.png"
-              alt=""
               class="w-100 img-fluid"
             />
-            <section class="mb-4 p-4 secao_leitura secao">
+            <section class="mb-4 p-4 secao secao__leitura">
               <div
                 class="d-flex mb-2 justify-content-between align-items-center"
               >
-                <h4>leitura</h4>
-                <div class="modulo_bg-iconP">
+                <h2 class="secao--titulo__leitura">leitura</h2>
+                <div class="icon-leitura">
                   <img
                     src="../assets/icons/leitura.svg"
-                    alt=""
-                    class="modulo_bg-icon-imgP"
+                    alt="rosa dos ventos azul"
+                    class="icon-leitura__img"
                   />
                 </div>
               </div>
@@ -309,9 +313,9 @@
                 </p>
                 <p>Acesse o módulo no botão a seguir.</p>
                 <a
-                  href="#"
+                  href="./breve.html"
                   target="_blank"
-                  class="btn btn-light btn-block px-2 row secao_button butto_leitura"
+                  class="btn btn-light btn-block px-2 row percurso-button percurso-button__leitura"
                 >
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -323,23 +327,23 @@
                     </div>
                     <img
                       src="../assets/icons/setaAzul.svg"
-                      alt=""
+                      alt="seta azul para direita"
                       height="20px"
                     />
                   </div>
                 </a>
               </div>
             </section>
-            <section class="mb-4 p-4 secao_registro secao">
+            <section class="mb-4 p-4 secao secao__registros">
               <div
                 class="d-flex mb-2 justify-content-between align-items-center"
               >
-                <h4>registros fotográficos</h4>
-                <div class="modulo_bg-iconG">
+                <h2 class="secao--titulo__registros">registros fotográficos</h2>
+                <div class="icon-registro">
                   <img
                     src="../assets/icons/registro.svg"
-                    alt=""
-                    class="modulo_bg-icon-imgG"
+                    alt="camera fotografica"
+                    class="icon-registro__img"
                   />
                 </div>
               </div>
@@ -357,9 +361,9 @@
                 </p>
                 <p>Acesse o módulo no botão a seguir.</p>
                 <a
-                  href="#"
+                  href="./breve.html"
                   target="_blank"
-                  class="btn btn-light btn-block px-2 row secao_button butto_registro"
+                  class="btn btn-light btn-block px-2 row percurso-button percurso-button__registros"
                 >
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -369,7 +373,7 @@
                     </div>
                     <img
                       src="../assets/icons/setaRoxa.svg"
-                      alt=""
+                      alt="seta roxa para direita"
                       height="20px"
                     />
                   </div>
